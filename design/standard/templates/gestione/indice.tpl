@@ -10,6 +10,11 @@
         </div>
 
         <ul>
+        	{if ezini( 'Settings', 'RunCronjob', 'selfimport.ini')|eq('enabled')}
+        	<li>
+        		<a href="{concat( 'gestione/importer/runcronjob/' )|ezurl(no)}">Run Cronjob</a></li>
+        	</li>
+        	{/if}
             {foreach $$handlers as $handler => $string}
                 <li><a href="{concat( 'gestione/importer/', $handler, '/' )|ezurl(no)}">{$string}</a></li>
             {/foreach}

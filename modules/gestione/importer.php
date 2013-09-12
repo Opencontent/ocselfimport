@@ -4,7 +4,8 @@ $Module = $Params['Module'];
 $tpl = eZTemplate::factory();
 
 $handler = $Params['Parameters'];
-$tpl->setVariable( 'handler', $handler[0] );
+$tpl->setVariable( 'handler', $handler[0] );  
+  
 
 $tpl = eZTemplate::factory();
 $Result = array();

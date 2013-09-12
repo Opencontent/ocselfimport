@@ -8,13 +8,7 @@ $ViewList = array();
 
 $ViewList['indice'] = array(
     'functions' => array( 'indice' ),
-    'script' => 'indice.php'/*,
-    'unordered_params' => array( 'language' => 'Language',
-                                 'offset' => 'Offset',
-                                 'year' => 'Year',
-                                 'month' => 'Month',
-                                 'day' => 'Day',
-                                 'show' => 'Show', )*/
+    'script' => 'indice.php'
     );
 
 
@@ -22,6 +16,7 @@ $ViewList['importer'] = array(
     'functions' => array( 'importer' ),
     'script' => 'importer.php'
     );
+
 
 	$ViewList['runimporter'] = array(
     'functions' => array( 'runimporter' ),
