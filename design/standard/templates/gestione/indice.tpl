@@ -10,7 +10,7 @@
         </div>
 
         <ul>
-        	{if ezini( 'Settings', 'RunCronjob', 'selfimport.ini')|eq('enabled')}
+        	{if ezini( 'Settings', 'Runcronjob', 'selfimport.ini')|eq('enabled')}
         	<li>
         		<a href="{concat( 'gestione/importer/runcronjob/' )|ezurl(no)}">Run Cronjob</a></li>
         	</li>
