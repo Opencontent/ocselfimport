@@ -1,4 +1,8 @@
-OC Self Import
+OpenContent Self Import
 
-Attivare l'estensione, aggiornare gli autoloads e svuotare le cache. 
+Questa estensione richiede SQLIImport
+
+Attivare l'estensione, aggiornare gli autoloads e svuotare le cache.
+
+Vedi selfiimport.ini per le configurazioni
 

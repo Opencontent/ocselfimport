@@ -33,7 +33,7 @@ $(document).ajaxStart(function(){
 {/literal}
 
 <p class="block float-break">
-    <a id="launch" class="button defaultbutton" href="#" onclick="launch();return false;">Avvia importazione</a>
+    <h2><a id="launch" class="button defaultbutton" href="#" onclick="launch();return false;">Avvia importazione</a></h2>
 </p>
 
 <div id="result">

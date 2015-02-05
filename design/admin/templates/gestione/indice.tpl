@@ -10,9 +10,9 @@
         </div>
 
         <ul>
-        	{if ezini( 'Settings', 'Runcronjob', 'selfimport.ini')|eq('enabled')}
+        	{if and( ezini( 'Settings', 'Runcronjob', 'selfimport.ini')|eq('enabled'), ezmodule( 'sqliimport' ) )}
         	<li>
-        		<a href="{concat( 'gestione/importer/runcronjob/' )|ezurl(no)}">Run Cronjob</a></li>
+        		<a href="{concat( 'gestione/importer/runcronjob/' )|ezurl(no)}">Avvia le importazioni pending (sqliimport_run)</a> <a href={'sqliimport/list'|ezurl()}>Vedi Import management</a></li>
         	</li>
         	{/if}
             {foreach $$handlers as $handler => $string}

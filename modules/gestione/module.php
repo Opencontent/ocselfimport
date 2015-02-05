@@ -8,25 +8,29 @@ $ViewList = array();
 
 $ViewList['indice'] = array(
     'functions' => array( 'indice' ),
-    'script' => 'indice.php'
+    'script' => 'indice.php',
+    'default_navigation_part' => 'ociniguinavigationpart'
     );
 
 
 $ViewList['importer'] = array(
     'functions' => array( 'importer' ),
-    'script' => 'importer.php'
+    'script' => 'importer.php',
+    'default_navigation_part' => 'ociniguinavigationpart'
     );
 
 
-	$ViewList['runimporter'] = array(
+$ViewList['runimporter'] = array(
     'functions' => array( 'runimporter' ),
-    'script' => 'runimporter.php'
+    'script' => 'runimporter.php',
+    'default_navigation_part' => 'ociniguinavigationpart'
     );
 
 
 $ViewList['logs'] = array(
     'script' => 'logs.php',
-    'functions' => array( 'log' ),    
+    'functions' => array( 'log' ),
+    'default_navigation_part' => 'ociniguinavigationpart'
 );
 
 $stateLimitations = eZContentObjectStateGroup::limitations();

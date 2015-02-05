@@ -49,7 +49,7 @@ class ProcessManager
 	public function addScript( $scriptBase = 'runcronjobs.php', $scriptPart, $maxExecutionTime = null )
     {
 		$ini = eZINI::instance( 'process.ini' );
-        $forbidden = $ini->variable( 'Forbidden', 'Parts' );
+        $forbidden = $ini->variable( 'Forbidden', 'Parts' );        
         if ( in_array( $scriptPart, $forbidden ) )
         {
             throw new Exception( "Script forbidden" );
