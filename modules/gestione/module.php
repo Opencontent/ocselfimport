@@ -19,6 +19,12 @@ $ViewList['importer'] = array(
     'default_navigation_part' => 'ociniguinavigationpart'
     );
 
+$ViewList['cleantoken'] = array(
+    'functions' => array( 'importer' ),
+    'script' => 'cleantoken.php',
+    'default_navigation_part' => 'ociniguinavigationpart'
+    );    
+
 
 $ViewList['runimporter'] = array(
     'functions' => array( 'runimporter' ),
