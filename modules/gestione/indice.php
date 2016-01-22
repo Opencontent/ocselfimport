@@ -18,6 +18,7 @@ $tpl->setVariable( 'handlers', $handlers );
 
 $Result = array();
 $Result['content'] = $tpl->fetch( 'design:gestione/indice.tpl' );
+$Result['left_menu'] = 'design:selfimport/parts/leftmenu.tpl';
 $Result['path'] = array( array( 'text' => 'Gestione' ,
                                 'url' => 'gestione/i' ) );
 

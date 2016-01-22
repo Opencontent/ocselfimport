@@ -10,6 +10,7 @@ $tpl->setVariable( 'handler', $handler[0] );
 $tpl = eZTemplate::factory();
 $Result = array();
 $Result['content'] = $tpl->fetch( 'design:gestione/importer.tpl' );
+$Result['left_menu'] = 'design:selfimport/parts/leftmenu.tpl';
 $Result['path'] = array( array( 'text' => 'Gestione' ,
                                 'url' => 'gestione/indice' ),
                          array( 'url' => false,
